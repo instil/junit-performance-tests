@@ -1,0 +1,25 @@
+group = 'co.instil'
+version = '1.0'
+
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'idea'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.6'
+}
+
+eclipse{
+    classpath {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'junit:junit:4.11'
+}
