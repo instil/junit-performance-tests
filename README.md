@@ -7,8 +7,8 @@ A simple JUnit rule and annotation to allow executing JUnit tests concurrently.
 ```java
 import org.junit.Rule;
 import org.junit.Test;
-import org.co.instil.junit.performance.BenchmarkRule;
-import org.co.instil.junit.performance.ExecuteConcurrently;
+import co.instil.junit.performance.BenchmarkRule;
+import co.instil.junit.performance.ExecuteConcurrently;
 
 public class PerformanceTest {
 
